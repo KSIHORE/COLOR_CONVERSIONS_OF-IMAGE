@@ -111,11 +111,8 @@ img = cv2.imread("lokesh.jpg")
 # Get the dimensions of the image
 height, width, _ = img.shape
 
-# Calculate the center of the image
-center_coordinates = (width // 2, height // 2)
-
 # Draw a circle at the center of the image
-res = cv2.circle(img, center_coordinates, 150, (255, 0, 0), 10)
+res = cv2.circle(img, (260,230), 150, (255, 0, 0), 10)
 
 # Display the image with the circle
 cv2.imshow('Image Window', res)
@@ -177,7 +174,7 @@ color = (255, 255, 255)  # White color
 thickness = 2
 
 # Add the text to the image
-res = cv2.putText(img, text, position, font, font_scale, color, thickness, cv2.LINE_AA)
+res = cv2.putText(img, text, position, font, font_scale, color, thickness)
 
 # Display the image with the text
 cv2.imshow('Image Window', res)
