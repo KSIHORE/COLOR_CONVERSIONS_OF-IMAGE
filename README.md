@@ -135,12 +135,12 @@ cv2.destroyAllWindows()
 
       
 ### iii)Draw a rectangle around a specific region of interest in the image.
-```Python
+```
 import cv2
 
 img = cv2.imread("lokesh.jpg")
 start=(0,0)
-stop=(409,529)
+stop=(800,600)
 color=(100,255,100)
 thickness=10
 res_img=cv2.rectangle(img,start,stop,color,thickness)
@@ -153,7 +153,7 @@ cv2.destroyAllWindows()
 
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/d8625052-38ee-46fc-a709-4af53bc6a2bc)
+![Screenshot 2024-09-21 102323](https://github.com/user-attachments/assets/31713003-b692-44cf-974c-c930a7403528)
 
 
 
